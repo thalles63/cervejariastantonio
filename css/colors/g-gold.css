@@ -1,0 +1,84 @@
+/* ========================================================================================= */
+/* ======================================= COLOR : #D9B130 =================================== */
+/* ========================================================================================= */
+.load-circle {
+  border-top: 2px solid #D9B130;
+}
+.s-header .header-overlay {
+  background: -webkit-linear-gradient(to right, rgba(217, 177, 48, 0.7), rgba(243, 156, 18, 0.7));
+  background: -moz-linear-gradient(to right, rgba(217, 177, 48, 0.7), rgba(243, 156, 18, 0.7));
+  background: -o-linear-gradient(to right, rgba(217, 177, 48, 0.7), rgba(243, 156, 18, 0.7));
+  background: -ms-linear-gradient(to right, rgba(217, 177, 48, 0.7), rgba(243, 156, 18, 0.7));
+  background: linear-gradient(to right, rgba(217, 177, 48, 0.7), rgba(243, 156, 18, 0.7));
+}
+.fixed .navbar-nav .active a {
+  color: #D9B130;
+}
+.fixed .navbar-nav .active:hover a {
+  color: #D9B130;
+}
+.services .serv-item .serv-icon i,
+.services .serv-item .serv-icon .icon {
+  color: #D9B130;
+}
+.about .ab-cont .features .icon,
+.about .ab-cont .features i {
+  color: #D9B130;
+}
+.skills li .progress-bar::before {
+  background: #D9B130;
+}
+.skills li .progress-bar span {
+  border: 2px solid #D9B130;
+}
+.work .filter-work a {
+  border: 1px solid #D9B130;
+}
+.work .filter-work .is-checked {
+  background-color: #D9B130;
+}
+.work .filter-work a:hover {
+  background-color: #D9B130;
+}
+.work .work-caption .overlay {
+  background: -webkit-linear-gradient(to right, rgba(217, 177, 48, 0.8), rgba(243, 156, 18, 0.8));
+  background: -moz-linear-gradient(to right, rgba(217, 177, 48, 0.8), rgba(243, 156, 18, 0.8));
+  background: -o-linear-gradient(to right, rgba(217, 177, 48, 0.8), rgba(243, 156, 18, 0.8));
+  background: -ms-linear-gradient(to right, rgba(217, 177, 48, 0.8), rgba(243, 156, 18, 0.8));
+  background: linear-gradient(to right, rgba(217, 177, 48, 0.8), rgba(243, 156, 18, 0.8));
+}
+.facts .facts-c .count {
+  color: #D9B130;
+}
+.prices .price-title .price-tabs .active a {
+  background-color: #D9B130;
+  border-color: #D9B130;
+}
+.pric-tables .item .mount h3 {
+  color: #D9B130;
+}
+.testimonial-box h3 {
+  color: #D9B130;
+}
+.owl-theme .owl-dots .active span {
+  border: 2px solid #D9B130 !important;
+  background: #D9B130 !important;
+}
+.blog-item .post-meta ul li i {
+  color: #D9B130;
+}
+.contact .cont-title .info li .icon,
+.contact .cont-title .info li i {
+  color: #D9B130;
+}
+.contact .contact-form .button {
+  background: #D9B130;
+}
+.contact-item input:focus,
+.contact-item textarea:focus {
+  border-color: #D9B130;
+}
+.footer .sc-icon a:hover span {
+  border-color: #D9B130;
+  background-color: #D9B130;
+}

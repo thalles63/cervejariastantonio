@@ -1,0 +1,77 @@
+/* ========================================================================================= */
+/* ======================================= COLOR : #e67e22 =================================== */
+/* ========================================================================================= */
+.load-circle {
+  border-top: 2px solid #e67e22;
+}
+.fixed .navbar-nav .active a {
+  color: #e67e22;
+}
+.fixed .navbar-nav .active:hover a {
+  color: #e67e22;
+}
+.services .serv-item .serv-icon i,
+.services .serv-item .serv-icon .icon {
+  color: #e67e22;
+}
+.about .ab-cont .features .icon,
+.about .ab-cont .features i {
+  color: #e67e22;
+}
+.skills li .progress-bar::before {
+  background: #e67e22;
+}
+.skills li .progress-bar span {
+  border: 2px solid #e67e22;
+}
+.work .filter-work a {
+  border: 1px solid #e67e22;
+}
+.work .filter-work .is-checked {
+  background-color: #e67e22;
+}
+.work .filter-work a:hover {
+  background-color: #e67e22;
+}
+.work .work-caption .overlay {
+  background: -webkit-linear-gradient(to right, rgba(230, 126, 34, 0.8), rgba(254, 140, 0, 0.8));
+  background: -moz-linear-gradient(to right, rgba(230, 126, 34, 0.8), rgba(254, 140, 0, 0.8));
+  background: -o-linear-gradient(to right, rgba(230, 126, 34, 0.8), rgba(254, 140, 0, 0.8));
+  background: -ms-linear-gradient(to right, rgba(230, 126, 34, 0.8), rgba(254, 140, 0, 0.8));
+  background: linear-gradient(to right, rgba(230, 126, 34, 0.8), rgba(254, 140, 0, 0.8));
+}
+.facts .facts-c .count {
+  color: #e67e22;
+}
+.prices .price-title .price-tabs .active a {
+  background-color: #e67e22;
+  border-color: #e67e22;
+}
+.pric-tables .item .mount h3 {
+  color: #e67e22;
+}
+.testimonial-box h3 {
+  color: #e67e22;
+}
+.owl-theme .owl-dots .active span {
+  border: 2px solid #e67e22 !important;
+  background: #e67e22 !important;
+}
+.blog-item .post-meta ul li i {
+  color: #e67e22;
+}
+.contact .cont-title .info li .icon,
+.contact .cont-title .info li i {
+  color: #e67e22;
+}
+.contact .contact-form .button {
+  background: #e67e22;
+}
+.contact-item input:focus,
+.contact-item textarea:focus {
+  border-color: #e67e22;
+}
+.footer .sc-icon a:hover span {
+  border-color: #e67e22;
+  background-color: #e67e22;
+}

@@ -1,0 +1,84 @@
+/* ========================================================================================= */
+/* ======================================= COLOR : #e74c3c =================================== */
+/* ========================================================================================= */
+.load-circle {
+  border-top: 2px solid #e74c3c;
+}
+.s-header .header-overlay {
+  background: -webkit-linear-gradient(to right, rgba(231, 76, 60, 0.7), rgba(225, 0, 0, 0.7));
+  background: -moz-linear-gradient(to right, rgba(231, 76, 60, 0.7), rgba(225, 0, 0, 0.7));
+  background: -o-linear-gradient(to right, rgba(231, 76, 60, 0.7), rgba(225, 0, 0, 0.7));
+  background: -ms-linear-gradient(to right, rgba(231, 76, 60, 0.7), rgba(225, 0, 0, 0.7));
+  background: linear-gradient(to right, rgba(231, 76, 60, 0.7), rgba(225, 0, 0, 0.7));
+}
+.fixed .navbar-nav .active a {
+  color: #e74c3c;
+}
+.fixed .navbar-nav .active:hover a {
+  color: #e74c3c;
+}
+.services .serv-item .serv-icon i,
+.services .serv-item .serv-icon .icon {
+  color: #e74c3c;
+}
+.about .ab-cont .features .icon,
+.about .ab-cont .features i {
+  color: #e74c3c;
+}
+.skills li .progress-bar::before {
+  background: #e74c3c;
+}
+.skills li .progress-bar span {
+  border: 2px solid #e74c3c;
+}
+.work .filter-work a {
+  border: 1px solid #e74c3c;
+}
+.work .filter-work .is-checked {
+  background-color: #e74c3c;
+}
+.work .filter-work a:hover {
+  background-color: #e74c3c;
+}
+.work .work-caption .overlay {
+  background: -webkit-linear-gradient(to right, rgba(231, 76, 60, 0.8), rgba(225, 0, 0, 0.8));
+  background: -moz-linear-gradient(to right, rgba(231, 76, 60, 0.8), rgba(225, 0, 0, 0.8));
+  background: -o-linear-gradient(to right, rgba(231, 76, 60, 0.8), rgba(225, 0, 0, 0.8));
+  background: -ms-linear-gradient(to right, rgba(231, 76, 60, 0.8), rgba(225, 0, 0, 0.8));
+  background: linear-gradient(to right, rgba(231, 76, 60, 0.8), rgba(225, 0, 0, 0.8));
+}
+.facts .facts-c .count {
+  color: #e74c3c;
+}
+.prices .price-title .price-tabs .active a {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.pric-tables .item .mount h3 {
+  color: #e74c3c;
+}
+.testimonial-box h3 {
+  color: #e74c3c;
+}
+.owl-theme .owl-dots .active span {
+  border: 2px solid #e74c3c !important;
+  background: #e74c3c !important;
+}
+.blog-item .post-meta ul li i {
+  color: #e74c3c;
+}
+.contact .cont-title .info li .icon,
+.contact .cont-title .info li i {
+  color: #e74c3c;
+}
+.contact .contact-form .button {
+  background: #e74c3c;
+}
+.contact-item input:focus,
+.contact-item textarea:focus {
+  border-color: #e74c3c;
+}
+.footer .sc-icon a:hover span {
+  border-color: #e74c3c;
+  background-color: #e74c3c;
+}

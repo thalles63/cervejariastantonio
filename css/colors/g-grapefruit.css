@@ -1,0 +1,84 @@
+/* ========================================================================================= */
+/* ======================================= COLOR : #DA4453 =================================== */
+/* ========================================================================================= */
+.load-circle {
+  border-top: 2px solid #DA4453;
+}
+.s-header .header-overlay {
+  background: -webkit-linear-gradient(to right, rgba(237, 85, 101, 0.7), rgba(218, 68, 83, 0.7));
+  background: -moz-linear-gradient(to right, rgba(237, 85, 101, 0.7), rgba(218, 68, 83, 0.7));
+  background: -o-linear-gradient(to right, rgba(237, 85, 101, 0.7), rgba(218, 68, 83, 0.7));
+  background: -ms-linear-gradient(to right, rgba(237, 85, 101, 0.7), rgba(218, 68, 83, 0.7));
+  background: linear-gradient(to right, rgba(237, 85, 101, 0.7), rgba(218, 68, 83, 0.7));
+}
+.fixed .navbar-nav .active a {
+  color: #DA4453;
+}
+.fixed .navbar-nav .active:hover a {
+  color: #DA4453;
+}
+.services .serv-item .serv-icon i,
+.services .serv-item .serv-icon .icon {
+  color: #DA4453;
+}
+.about .ab-cont .features .icon,
+.about .ab-cont .features i {
+  color: #DA4453;
+}
+.skills li .progress-bar::before {
+  background: #DA4453;
+}
+.skills li .progress-bar span {
+  border: 2px solid #DA4453;
+}
+.work .filter-work a {
+  border: 1px solid #DA4453;
+}
+.work .filter-work .is-checked {
+  background-color: #DA4453;
+}
+.work .filter-work a:hover {
+  background-color: #DA4453;
+}
+.work .work-caption .overlay {
+  background: -webkit-linear-gradient(to right, rgba(237, 85, 101, 0.8), rgba(218, 68, 83, 0.8));
+  background: -moz-linear-gradient(to right, rgba(237, 85, 101, 0.8), rgba(218, 68, 83, 0.8));
+  background: -o-linear-gradient(to right, rgba(237, 85, 101, 0.8), rgba(218, 68, 83, 0.8));
+  background: -ms-linear-gradient(to right, rgba(237, 85, 101, 0.8), rgba(218, 68, 83, 0.8));
+  background: linear-gradient(to right, rgba(237, 85, 101, 0.8), rgba(218, 68, 83, 0.8));
+}
+.facts .facts-c .count {
+  color: #DA4453;
+}
+.prices .price-title .price-tabs .active a {
+  background-color: #DA4453;
+  border-color: #DA4453;
+}
+.pric-tables .item .mount h3 {
+  color: #DA4453;
+}
+.testimonial-box h3 {
+  color: #DA4453;
+}
+.owl-theme .owl-dots .active span {
+  border: 2px solid #DA4453 !important;
+  background: #DA4453 !important;
+}
+.blog-item .post-meta ul li i {
+  color: #DA4453;
+}
+.contact .cont-title .info li .icon,
+.contact .cont-title .info li i {
+  color: #DA4453;
+}
+.contact .contact-form .button {
+  background: #DA4453;
+}
+.contact-item input:focus,
+.contact-item textarea:focus {
+  border-color: #DA4453;
+}
+.footer .sc-icon a:hover span {
+  border-color: #DA4453;
+  background-color: #DA4453;
+}
