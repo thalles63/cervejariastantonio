@@ -232,6 +232,13 @@ video {
   .banner .content {
      margin-top: 0;
   }
+  video {
+    height: 100%;
+    width: auto;
+  }
+  .banner .content img { 
+    height: 150px;
+  }
 }
 .banner .video-backdrop {
   background-color: #111;
