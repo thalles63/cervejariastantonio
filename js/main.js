@@ -1,103 +1,53 @@
-//////////////////////////////////////////////////////  //
-//    EVENTS ON DOCUMENT READY                          //
-//////////////////////////////////////////////////////  //
+(function () {
+   emailjs.init('user_ETb33n9DaGIpKWFF0xYrn');
+})();
+const year = document.querySelector("#year");
+year.innerHTML = new Date().getFullYear();
+function toggleMenu() {
+   const menu = document.querySelector('.hamburger');
+   const navigation = document.querySelector('.navigation');
+   const header = document.querySelector('header');
 
-$(document).ready(function () {
-    "use strict";
+   menu.classList.toggle('is-active');
+   navigation.classList.toggle('active');
+   header.classList.toggle('active');
+}
+function closeMenu() {
+   const menu = document.querySelector('.hamburger');
+   const navigation = document.querySelector('.navigation');
+   const header = document.querySelector('header');
 
-    //// PRELOADER TRIGGER
-    $(window).on("load", function() {
-        $(".loading").fadeOut(300);
-    });
-
-    
-    $(".maior-idade-btn").click( () => {
-      // localStorage.setItem('isMaior', true);
-      $(".maior-idade").fadeOut(300);
-      
-    })
-
-    $(".menor-idade-btn").click( () => {
-      window.history.back();
-    })
-
-
-    //// FIXED NAVBAR
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 50) {
-            $('.navbar').addClass('fixed');
-        } else {
-            $('.navbar').removeClass('fixed');
-        }
-    });
-
-    //// SMOTH SCROLL
-    $.scrollIt({
-        topOffset: -80
-    });
-
-    //// COLLAPSED MENU CLOSE ON CLICK
-    $(document).on('click', '.navbar-collapse.in', function (e) {
-        if ($(e.target).is('a')) {
-            $(this).collapse('hide');
-        }
-    });
-
-    //// SCROLL SPY TRIGGER
-    $('body').scrollspy({
-        target: '.navbar-collapse',
-        offset: 195
-    });
-
-    //// ISOTOPE TRIGGER
-    var $grid = $('.work-content').isotope({
-      itemSelector: '.work-item',
-      stagger: 30
-    });
-    $(window).on('load', function(){ $grid.isotope('layout') }); 
-    $('.filter-work').on( 'click', '.button', function() {
-      var filterValue = $(this).attr('data-filter');
-      $grid.isotope({ filter: filterValue });
-    });
-    // change is-checked class on buttons
-    $('.button-group').each( function( i, buttonGroup ) {
-      var $buttonGroup = $( buttonGroup );
-      $buttonGroup.on( 'click', 'a', function() {
-        $buttonGroup.find('.is-checked').removeClass('is-checked');
-        $( this ).addClass('is-checked');
-      });
-    });
-
-    //// MASONRY
-    $('.work-content').isotope({
-      itemSelector: '.work-caption img',
-      masonry: {
-        columnWidth: 0
-      }
-    });
-    
-    //// COUNT TO TRIGGER
-    var eventFired = false,
-    objectPositionTop = $('.facts').offset().top;
-    $(window).on('scroll', function () {
-        var currentPosition = $(document).scrollTop() + 400;
-        if (currentPosition >= objectPositionTop && eventFired === false) {
-            eventFired = true;
-            $(".count").countTo({
-                speed: 5000,
-                refreshInterval: 80
-            });
-        }
-    });
-
-    // OWL CAROUSEL TRIGGER
-    $('.owl-carousel').owlCarousel({
-        items: 1,
-        margin: 0,
-        dots: true
-     });
-    
-    //// PARSLEY TRIGGER
-    $('.cont-fo').parsley();
-
+   menu.classList.remove('is-active');
+   navigation.classList.remove('active');
+   header.classList.remove('active');
+}
+window.addEventListener('scroll', function () {
+   const header = document.querySelector('header');
+   header.classList.toggle("sticky", window.scrollY > 0)
 });
+function goTo(section) {
+   document.querySelector('#' + section).scrollIntoView({
+      behavior: 'smooth'
+   });
+}
+
+window.onload = function () {
+   document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      var btn = document.getElementById("submit-button");
+      var msg = document.getElementsByClassName("sending-msg")[0];
+      btn.disabled = true;
+      msg.style.display = 'inline';
+      
+      emailjs.sendForm('service_gmail', 'template_st_antonio', this)
+         .then(function () {
+            var info = document.getElementsByClassName("column-info")[0];
+            var success = document.getElementsByClassName("column-success")[0];
+
+            info.style.display = 'none';
+            success.style.display = 'flex';
+         }, function (error) {
+            console.log('FAILED...', error);
+         });
+   });
+}
