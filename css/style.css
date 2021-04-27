@@ -771,6 +771,9 @@ video {
    .contato .container .contact-form .form-box .input-box.w100:last-of-type {
       margin-bottom: 0;
    }
+   .contato .container .contact-form .form-box .input-box.w50 {
+      width: 100%;
+   }
 }
 /* ------------------ FINAL CSS CONTATO ------------------ */
 
