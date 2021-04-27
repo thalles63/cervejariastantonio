@@ -66,14 +66,13 @@
 
 	<header>
 		<a href="#" class="logo">Cervejaria <span>St. Antônio</span></a>
-		<!-- <div class="menu-toggle">
-			<button class="hamburger hamburger--spin custom-hamburguer" type="button" onclick="toggleMenu()">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-				</span>
-			</button>
-		</div> -->
+		<div class="menu-open">
+			<i class="las la-bars" onclick="openMenu()"></i>
+		</div>
 		<ul class="navigation">
+			<div class="menu-close">
+				<i class="las la-times" onclick="closeMenu()"></i>
+			</div>
 			<li><a href="javascript:void(0)" onclick="goTo('banner');closeMenu();">Inicial</a></li>
 			<li><a href="javascript:void(0)" onclick="goTo('quemsomos');closeMenu()">Quem somos</a></li>
 			<li><a href="javascript:void(0)" onclick="goTo('cervejas');closeMenu()">Cervejas</a></li>
