@@ -369,7 +369,7 @@ video {
 /* ------------------ FINAL CSS cervejas DE ATUAÇÃO ------------------ */
 
 .cerveja {
-   background: url('../img/back-cevada.jpg');
+   background: url('../img/back-cevada.webp');
    background-size: cover;
    background-position: bottom;
    padding: 100px 0;
