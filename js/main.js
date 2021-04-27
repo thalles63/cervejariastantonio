@@ -30,6 +30,13 @@ function goTo(section) {
       behavior: 'smooth'
    });
 }
+function dismiss() {
+   window.history.back();
+}
+function proceed() {
+   var modal = document.getElementsByClassName('maior-idade')[0];
+   modal.style.display = 'none';
+}
 window.onload = function () {
    document.getElementById('contact-form').addEventListener('submit', function (event) {
       event.preventDefault();

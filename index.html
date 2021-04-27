@@ -44,16 +44,20 @@
 <body>
 	<div class="maior-idade">
 		<div class="container-idade">
-			<div class="area-idade">
-				<img src="./img/logo-idade.png" class="img-idade" alt="fundo cerveja">
-				<div>
-					<div class="idade-title ">Você tem mais de 18 anos?</div>
-					<div class="idade-botoes-container clear-container">
-						<div class="btn-idade maior-idade-btn" style="margin-right:5px;">SIM</div>
-						<div class="btn-idade menor-idade-btn" style="margin-left:5px;">NÃO</div>
-					</div>
-					<div class="idade-direitos">
-						© Cervejaria St. Antônio 2019. Todos os direitos reservados.
+
+			<div class="image-left">
+				<img src="img/back-idade.webp" alt="Copo de cerveja artesanal">
+			</div>
+
+			<div class="form-right">
+				<div class="container-form-right">
+					<img src="img/logo-idade.webp" class="img-idade" alt="logomarca st antonio">
+					<h1>Precisamos confirmar a sua idade.</h1>
+					<div class="idade-title">Você tem mais de 18 anos?</div>
+
+					<div class="idade-botoes-container">
+						<div class="btn-idade" onclick="proceed()" style="margin-right:5px;">SIM</div>
+						<div class="btn-idade" onclick="dismiss()" style="margin-left:5px;">NÃO</div>
 					</div>
 				</div>
 			</div>
@@ -146,7 +150,7 @@
 	<section class="cervejas" id="cervejas">
 		<div class="title">
 			<h2 class="title-text">Nossas Cervejas</h2>
-			<p>Conheça um pouco mais sobre as cervejas que produzimos.</p>
+			<p>Conheça um pouco mais sobre as cervejas artesanais que produzimos.</p>
 		</div>
 		<div class="content">
 			<div class="row">
