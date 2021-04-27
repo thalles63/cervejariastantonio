@@ -200,7 +200,7 @@ header .header-social.social div {
    margin-right: 5px;
    font-size: 22px;
 }
-header .menu-open {
+header .menu-open, header .menu-close {
    display: none;
 }
 @media(max-width: 991px) {
@@ -258,13 +258,13 @@ header .menu-open {
       z-index: 9;
    }
    header .menu-close {
+      display: flex;
       position: absolute;
       top: 15px;
       right: 15px;
       font-size: 25px;
    }
 }
-
 .banner {
    position: relative;
    width: 100%;
