@@ -33,18 +33,16 @@ function goTo(section) {
 window.onload = function () {
    document.getElementById('contact-form').addEventListener('submit', function (event) {
       event.preventDefault();
-      var btn = document.getElementById("submit-button");
-      var msg = document.getElementsByClassName("sending-msg")[0];
-      btn.disabled = true;
-      msg.style.display = 'inline';
+      
+      var info = document.getElementsByClassName("form-box")[0];
+      var success = document.getElementsByClassName("form-success")[0];
+
+      info.style.display = 'none';
+      success.style.display = 'block';
       
       emailjs.sendForm('service_gmail', 'template_st_antonio', this)
          .then(function () {
-            var info = document.getElementsByClassName("column-info")[0];
-            var success = document.getElementsByClassName("column-success")[0];
 
-            info.style.display = 'none';
-            success.style.display = 'flex';
          }, function (error) {
             console.log('FAILED...', error);
          });

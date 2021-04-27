@@ -410,7 +410,7 @@ video {
    }
 }
 /* ------------------ INICIO CSS CONTATO ------------------ */
-.contact-column {
+/* .contact-column {
    flex-basis: 50%;
    margin-bottom: 30px;
 }
@@ -494,26 +494,7 @@ video {
    cursor: pointer;
    width: auto;
 }
-.social {
-   display: flex;
-   font-size: 28px;
-   flex-wrap: wrap;
-   color: #FFF;
-}
-.social div {
-   margin: 10px;
-   margin-right: 5px;
-   cursor: pointer;
-}
-.social div a {
-   text-decoration: none;
-   color: var(--main-color);
-}
-.title-social {
-   flex: 1 0 100%;
-   font-size: 14px;
-   margin-left: 10px;
-}
+} */
 .checkmark__circle {
    stroke-dasharray: 166;
    stroke-dashoffset: 166;
@@ -561,14 +542,234 @@ video {
       box-shadow: inset 0px 0px 0px 30px #0abb87;
    }
 }
-@media(max-width: 1368px) {
-   .contato-inner {
-      max-width: 1100px;
+
+.social {
+   display: flex;
+   font-size: 28px;
+   flex-wrap: wrap;
+   color: #FFF;
+}
+.social div {
+   margin: 10px;
+   margin-right: 5px;
+   cursor: pointer;
+}
+.social div a {
+   text-decoration: none;
+   color: var(--main-color);
+}
+.title-social {
+   flex: 1 0 100%;
+   font-size: 14px;
+   margin-left: 10px;
+}
+.contato {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 650px;
+   background-color: #232323;
+   margin: 0;
+   padding: 0;
+   max-width: none;
+   position: relative;
+}
+.contato::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 50%;
+   height: 100%;
+   background: #2e2e2e;
+}
+.contato .container {
+   position: relative;
+   min-width: 1100px;
+   min-height: 550px;
+   display: flex;
+   z-index: 2;
+}
+.contato .container .contact-info {
+   position: absolute;
+   top: 40px;
+   width: 350px;
+   height: calc(100% - 80px);
+   z-index: 1;
+   background-color: #232323;
+   padding: 40px;
+   justify-content: center;
+   flex-direction: column;
+   justify-content: space-between;
+   box-shadow: 0 20px 25px rgba(0,0,0,0.15);
+   display: flex;
+}
+.contato .container .contact-info h2 {
+   color: #FFF;
+   font-size: 22px;
+   font-weight: 500;
+}
+.contato .container .contact-info ul.info {
+   position: relative;
+   margin: 20px 0;
+}
+.contato .container .contact-info ul.info li {
+   position: relative;
+   list-style: none;
+   display: flex;
+   margin: 20px 0;
+   align-items: center;
+}
+.contato .container .contact-info ul.info li .las {
+   font-size: 30px;
+   color: #FFF;
+}
+.contato .container .contact-info ul.info li span:nth-child(2) {
+   color: #FFF;
+   margin-left: 10px;
+   font-weight: 300;
+}
+.contato .container .contact-info ul.info li span:nth-child(2) a {
+   color: var(--main-color);
+   text-decoration: none;
+}
+.contato .container .contact-info ul.sci {
+   position: relative;
+   display: flex;
+}
+.contato .container .contact-info ul.sci li {
+   list-style: none;
+   margin-right: 15px;
+}
+.contato .container .contact-info ul.sci li a {
+   text-decoration: none;
+   color: var(--main-color);
+   font-size: 30px;
+}
+.contato .container .contact-form {
+   position: absolute;
+   padding: 70px 50px;
+   padding-left: 250px;
+   margin-left: 150px;
+   width: calc(100% - 150px);
+   height: 100%;
+   background: #FFF;
+   box-shadow: 0 50px 50px rgba(0,0,0,0.15);
+}
+.contato .container .contact-form h2 {
+   color: #232323;
+   font-size: 22px;
+   font-weight: 500;
+}
+.contato .container .contact-form .form-box {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding-top: 30px;
+}
+.contato .container .contact-form .form-box .input-box {
+   position: relative;
+   margin-bottom: 35px;
+}
+.contato .container .contact-form .form-box .input-box.w50 {
+   width: 47%;
+}
+.contato .container .contact-form .form-box .input-box.w100 {
+   width: 100%;
+}
+.contato .container .contact-form .form-box .input-box input,
+.contato .container .contact-form .form-box .input-box textarea {
+   width: 100%;
+   resize: none;
+   padding: 5px 0;
+   font-size: 18px;
+   font-weight: 300;
+   color: #232323;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #777;
+}
+.contato .container .contact-form .form-box .input-box textarea {
+   height: 120px;
+}
+.contato .container .contact-form .form-box .input-box span {
+   position: absolute;
+   left: 0;
+   padding: 5px 0;
+   pointer-events: none;
+   font-size: 18px;
+   font-weight: 300;
+   transition: 0.3s;
+}
+.contato .container .contact-form .form-box .input-box input:focus ~ span,
+.contato .container .contact-form .form-box .input-box input:valid ~ span,
+.contato .container .contact-form .form-box .input-box textarea:focus ~ span,
+.contato .container .contact-form .form-box .input-box textarea:valid ~ span {
+   transform: translateY(-20px);
+   font-size: 12px;
+   font-weight: 500;
+   letter-spacing: 1;
+   color: #232323;
+}
+.contato .container .contact-form .form-box .input-box input[type="submit"] {
+   position: relative;
+   cursor: pointer;
+   background: var(--main-color);
+   color: #FFF;
+   border: none;
+   max-width: 150px;
+   padding: 12px;
+}
+.contato .container .contact-form .form-box .input-box input[type="submit"]:hover {
+   background: #be7b0f;
+}
+.contato .container .contact-form .form-success {
+   padding-top: 90px;
+   padding-bottom: 90px;
+   display: none;
+}
+@media(max-width: 1200px) {
+   .contato .container {
+      width: 90%;
+      min-width: auto;
+      margin: 20px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+   }
+   .contato .container .contact-info {
+      top: 0;
+      height: 550px;
+      position: relative;
+      box-shadow: none;
+   }
+   .contato .container .contact-form {
+      position: relative;
+      box-shadow: none;
+      width: calc(100% - 350px);
+      margin-left: 0;
+      padding-left: 0;
+      padding: 40px;
+      height: 550px;
    }
 }
 @media(max-width: 991px) {
-   .contato-inner {
-      flex-flow: column;
+   .contato {
+      background: #2e2e2e;
+   }
+   .contato::before {
+      display: none;
+   }
+   .contato .container {
+      display: flex;
+      flex-direction: column;
+   }
+   .contato .container .contact-info,
+   .contato .container .contact-form {
+      width: 100%;
+      height: auto;
+   }
+   .contato .container .contact-form .form-box .input-box.w100:last-of-type {
+      margin-bottom: 0;
    }
 }
 /* ------------------ FINAL CSS CONTATO ------------------ */
